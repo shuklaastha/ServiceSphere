@@ -213,6 +213,10 @@ def register_professional():
     # Check if email already exists
     if User.query.filter_by(email=data['email']).first():
         return jsonify({"error": "Email already in use"}), 400
+    
+    # Check if number already exists
+    if User.query.filter_by(phone=data['phone']):
+        return jsonify({"error": "Phone number already in use"}), 400
 
     # Hash password
     hashed_password = generate_password_hash(data['password'])

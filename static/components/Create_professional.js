@@ -163,7 +163,7 @@ export default {
             alert("Professional registered successfully!");
             this.$router.push("/login");
           } else {
-            alert("Failed to register professional!");
+            alert("Failed to register professional, check your email or phone number!");
           }
         } catch (error) {
           console.error("Error:", error);
