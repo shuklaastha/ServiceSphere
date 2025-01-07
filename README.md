@@ -24,7 +24,7 @@ Python, Flask, Sqlite, Redis, Celery, Vue.js
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/shuklaastha/ServiceSphere
 ```
 
 Go to the project directory
